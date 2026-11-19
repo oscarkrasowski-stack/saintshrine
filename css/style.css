@@ -1,0 +1,115 @@
+body {
+    margin:0px;
+}
+
+.container {
+    background-image:url("bg/windsweptspires.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:scroll;
+
+    color:yellow;
+
+    .header {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+
+        background-color:rgba(0,0,0,0.5);
+    }
+
+    .main {
+        display:flex;
+        min-height:555px;
+
+        .nav {
+            min-width:15%;
+            padding:20px;
+
+            background-color:rgba(0,0,0,0.75);
+
+            a {
+                color:blue;
+            }
+
+            a:hover {
+                animation-name:SaintBlink;
+                animation-duration:0.15s;
+                animation-iteration-count:infinite;
+            }
+        }
+    }
+
+    .content {
+        display:flex;
+        flex-wrap:wrap;
+        padding:20px;
+        break-inside:avoid;
+
+        #saintmenu {
+            height:260px;
+            width:360px;
+            display:block;
+            padding:5px;
+        }
+
+        #saintconfetti {
+            height:180px;
+            width:240px;
+            display:block;
+            padding:5px;
+        }
+
+        #saintshock {
+            height:275px;
+            width:230px;
+            display:block;
+            padding:5px;
+        }
+
+        #saintplush {
+            height:200px;
+            width:200px;
+            display:block;
+            padding:5px;
+        }
+
+        #saintswing {
+            height:240px;
+            width:320px;
+            display:block;
+            padding:5px;
+        }
+
+        #saintattune {
+            height:215px;
+            width:180px;
+            display:block;
+            padding:5px;
+        }
+
+        #saintfreeze {
+            height:200px;
+            width:200px;
+            display:block;
+            padding:5px;
+        }
+    }
+
+    .footer {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+
+        background-color:rgba(0,0,0,0.5);
+    }
+}
+
+@keyframes SaintBlink {
+    0% {color:blue;}
+    50% {color:yellow;}
+    100% {color:blue;}
+}
